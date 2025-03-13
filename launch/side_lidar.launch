@@ -4,13 +4,13 @@
   <!-- Launch left_lidar_tf node -->
   <node pkg="rplidar_ros" type="tf_broadcaster" name="left_lidar_tf" respawn= "true" output="screen">
     <param name="lidar_name" value="left_lidar"/>
-    <rosparam file="$(find rplidar_ros)/config/side_lidar_config.yaml" command="load"/>
+    <rosparam file="$(find rplidar_ros)/configs/side_lidar_config.yaml" command="load"/>
   </node>
 
   <!-- Launch right_lidar_tf node -->
   <node pkg="rplidar_ros" type="tf_broadcaster" name="right_lidar_tf" respawn= "true" output="screen">
     <param name="lidar_name" value="right_lidar"/>
-    <rosparam file="$(find rplidar_ros)/config/side_lidar_config.yaml" command="load"/>
+    <rosparam file="$(find rplidar_ros)/configs/side_lidar_config.yaml" command="load"/>
   </node>
 
   <node name="right_rplidar_node" pkg="rplidar_ros"  type="rplidarNode" output="screen">
