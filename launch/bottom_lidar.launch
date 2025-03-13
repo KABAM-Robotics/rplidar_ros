@@ -30,7 +30,7 @@
             <remap from="scan_filtered" to="bottom_laser_scan_left" />
         </node>
 
-        <node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter_right">
+        <node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter_back">
             <rosparam command="load" file="$(find rplidar_ros)/configs/bottom_lidar_filter_back.yaml" />
             <remap from="scan" to="bottom_laser_scan" />
             <remap from="scan_filtered" to="bottom_laser_scan_back" />
