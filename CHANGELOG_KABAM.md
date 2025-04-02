@@ -1,7 +1,10 @@
 # Change log for rplidar_ros package (KABAM Robotics version)
 
-## 0.2.0-dev [2025-01-09]
-- Added arg to enable and disable bottom lidar left, right and rear filters.
+## 0.3.0-dev [2025-03-07]
+- Added left and right lidar filters for it to be compatible with old negative obstacle detection version.
+
+## 0.2.0 [2025-01-09]
+- Added arg to enable and disable bottom lidar left, bottom right and bottom rear filters.
 - Changed `static_transform_publisher` package to use `tf2_ros` package.
 - Changed launch file formatting.
 - Reduced bottom lidar filter field of view.
